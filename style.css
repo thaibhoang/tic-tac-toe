@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+}
+header {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: aliceblue;
+    padding: 5rem 5rem;
+}
+
+.box {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.box > div {
+    background-color: bisque;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background-image: linear-gradient(210deg, bisque, orange);
+    outline: none;
+    height: 3rem;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: none;
+    cursor: pointer;
+}
